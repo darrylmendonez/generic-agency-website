@@ -32,11 +32,7 @@
               "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/popper.min.js",
-              "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
