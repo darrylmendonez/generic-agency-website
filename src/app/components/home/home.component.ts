@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any;
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -12,8 +12,7 @@ export class HomeComponent implements OnInit {
     this.jquery_code();
   }
 
-  jquery_code()
-  {
+  jquery_code() {
     $(document).ready(function(){
       $('.parallax').parallax();
       $('.carousel').carousel({
