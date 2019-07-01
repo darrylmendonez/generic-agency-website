@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
       $('.materialboxed').materialbox();
       $('.slider').slider();
       $('.modal').modal();
-      $('.tap-target').tapTarget();
+      $('.scrollspy').scrollSpy();
     });
   }
 
