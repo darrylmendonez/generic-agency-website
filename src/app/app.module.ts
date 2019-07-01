@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import 'materialize-css';
+import { MaterializeModule } from 'angular2-materialize';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { WorkComponent } from './components/work/work.component';
 import { ExpertiseComponent } from './components/expertise/expertise.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { TemplateComponent } from './components/template/template.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,13 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutComponent,
     WorkComponent,
     ExpertiseComponent,
-    ContactComponent
+    ContactComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterializeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
