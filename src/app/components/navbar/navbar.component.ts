@@ -10,7 +10,7 @@ import {Settings, MenuLink} from '../../settings/setting.model';
 export class NavbarComponent implements OnInit {
 
   appSettings: Settings;
-  navSettings: MenuLink[];
+  // navSettings: MenuLink[];
   brandName = 'Brand Name';
   navTitle = 'Navbar Title';
   navItems = [
@@ -37,7 +37,7 @@ export class NavbarComponent implements OnInit {
   ];
 
   constructor() {
-    this.navSettings = AppSettings.menu;
+    // this.navSettings = AppSettings.menu;
   }
 
   ngOnInit() {

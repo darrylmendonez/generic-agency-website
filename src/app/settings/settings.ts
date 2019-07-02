@@ -7,31 +7,31 @@ export const AppSettings: Settings = {
       label: 'Home',
       url: './',
       isTargetScroll: true,
-      targetFragment: 'home'
+      // targetFragment: 'home'
     },
     {
       label: 'About Us',
       url: './',
       isTargetScroll: true,
-      targetFragment: 'section-1'
+      // targetFragment: 'section-1'
     },
     {
       label: 'Our Mindset',
       url: './',
       isTargetScroll: true,
-      targetFragment: 'section-2'
+      // targetFragment: 'section-2'
     },
     {
       label: 'Client Testimonials',
       url: './',
       isTargetScroll: true,
-      targetFragment: 'section-3'
+      // targetFragment: 'section-3'
     },
     {
       label: 'Contact Us',
       url: './',
       isTargetScroll: true,
-      targetFragment: 'section-4'
+      // targetFragment: 'section-4'
     }
   ],
   socialLinks: []
