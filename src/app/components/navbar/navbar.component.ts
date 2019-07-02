@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AppSettings} from '../../settings/settings';
+import {Settings, MenuLink} from '../../settings/setting.model';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  appSettings: Settings;
+  navSettings: MenuLink[];
   brandName = 'Brand Name';
   navTitle = 'Navbar Title';
   links = [
@@ -32,7 +36,9 @@ export class NavbarComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor() {
+    this.navSettings = AppSettings.menu;
+  }
 
   ngOnInit() {
   }

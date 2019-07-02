@@ -1,16 +1,38 @@
+import {BaseLink, MenuLink, Settings} from './setting.model';
 
-export interface MenuLinks {
-  isTargetScroll: boolean;
-  targetId?: string;
-  url?: string;
-  label: string;
-};
-export interface Settings {
-  disabledPageSections?: Array<string>;
-  parallax: boolean;
-  menu: MenuLinks[];
-}
-
-export const AppSettings = {
-
+export const AppSettings: Settings = {
+  parallax: true,
+  menu: [
+    {
+      label: 'Home',
+      url: './',
+      isTargetScroll: true,
+      targetFragment: 'home'
+    },
+    {
+      label: 'About Us',
+      url: './',
+      isTargetScroll: true,
+      targetFragment: 'section-1'
+    },
+    {
+      label: 'Our Mindset',
+      url: './',
+      isTargetScroll: true,
+      targetFragment: 'section-2'
+    },
+    {
+      label: 'Client Testimonials',
+      url: './',
+      isTargetScroll: true,
+      targetFragment: 'section-3'
+    },
+    {
+      label: 'Contact Us',
+      url: './',
+      isTargetScroll: true,
+      targetFragment: 'section-4'
+    }
+  ],
+  socialLinks: []
 };

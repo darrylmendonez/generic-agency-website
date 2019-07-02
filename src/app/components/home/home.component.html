@@ -33,7 +33,7 @@
       <div class="col s12 m4">
         <br />
         <br />
-        <a href="#contact-us" class="waves-effect waves-light btn orange darken-3">
+        <a [routerLink]="['./']" fragment="contact-us" class="waves-effect waves-light btn orange darken-3">
           Contact Us <i class="material-icons right">send</i>
         </a>
       </div>
@@ -69,7 +69,7 @@
     </div>
   </div>
   <div class="row container">
-    <div class="col s12 m4">
+    <!-- <div class="col s12 m4">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
           <span class="card-title">Card Title</span>
@@ -111,6 +111,9 @@
             </div>
           </div>
         </div>
+      </div> -->
+      <div class="col s12">
+        Section
       </div>
   </div>
 </div>
@@ -139,7 +142,8 @@
     </div>
   </div>
   <div class="row container">
-    <div class="col m4">
+    <div class="col s12">SEction</div>
+    <!-- <div class="col m4">
       <div class="carousel">
         <a class="carousel-item" href="#one!"><img src="assets/img/carousel/1.jpg"></a>
         <a class="carousel-item" href="#two!"><img src="assets/img/carousel/2.jpg"></a>
@@ -193,7 +197,7 @@
           <br>
           Note: This is also touch compatible! Try swiping with your finger to scroll through the carousel.
       </p>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -216,6 +220,11 @@
 
 <div class="section orange lighten-3">
   <div class="row container">
+    <div class="col s12">
+      Section
+    </div>
+  </div>
+  <!-- <div class="row container">
     <div class="col m12 center-align blue-text text-darken-3">
       <h3>Collapsibles</h3>
       <p>
@@ -258,7 +267,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <!-- media -->
@@ -280,6 +289,9 @@
 
 <div class="section orange lighten-3">
   <div class="row container">
+    <div class="col s12"></div>
+  </div>
+  <!-- <div class="row container">
     <div class="col m12 center-align blue-text text-darken-3">
       <h3>Media</h3>
       <p>
@@ -310,28 +322,28 @@
       <div class="slider">
         <ul class="slides">
           <li>
-            <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+            <img src="https://lorempixel.com/580/250/nature/1">
             <div class="caption center-align">
               <h3>This is our big Tagline!</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
           <li>
-            <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+            <img src="https://lorempixel.com/580/250/nature/2">
             <div class="caption left-align">
               <h3>Left Aligned Caption</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
           <li>
-            <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+            <img src="https://lorempixel.com/580/250/nature/3">
             <div class="caption right-align">
               <h3>Right Aligned Caption</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
           <li>
-            <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+            <img src="https://lorempixel.com/580/250/nature/4">
             <div class="caption center-align">
               <h3>This is our big Tagline!</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -343,7 +355,7 @@
         Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.
       </p>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <!-- modal -->
@@ -362,9 +374,12 @@
       <img src="assets/img/modal/modal-background.jpg">
     </div>
   </div>
-  
+
   <div class="section orange lighten-3">
     <div class="row container">
+      <div class="col s12"></div>
+    </div>
+    <!-- <div class="row container">
       <div class="col m12 center-align blue-text text-darken-3">
         <h3>Modals</h3>
         <p>
@@ -380,11 +395,11 @@
             <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up.</p>
           </div>
           <div class="card-action">
-              <!-- Modal Trigger -->
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
           </div>
         </div>
-        <!-- Modal Structure -->
+
         <div id="modal1" class="modal">
           <div class="modal-content">
             <h4>Modal Header</h4>
@@ -402,11 +417,11 @@
             <p>If you have content that is very long and you want the action buttons to be visible all the time, you can add the  modal-fixed-footer class to the modal.</p>
           </div>
           <div class="card-action">
-              <!-- Modal Trigger -->
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal</a>
           </div>
         </div>
-        <!-- Modal Structure -->
+
         <div id="modal2" class="modal modal-fixed-footer">
           <div class="modal-content">
             <h4>Modal Header</h4>
@@ -435,11 +450,11 @@
             <p>Bottom Sheet Modals are good for displaying actions to the user on the bottom of a screen. They still act the same as regular modals.</p>
           </div>
           <div class="card-action">
-              <!-- Modal Trigger -->
+
               <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal</a>
           </div>
         </div>
-        <!-- Modal Structure -->
+
         <div id="modal3" class="modal bottom-sheet">
           <div class="modal-content">
             <h4>Bottom-Sheet Modal</h4>
@@ -450,7 +465,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
 <!-- form -->
@@ -469,7 +484,7 @@
     <img src="assets/img/form/form-background.jpg">
   </div>
 </div>
-  
+
 <div class="section orange lighten-3">
   <div class="row container">
     <div class="col m12 center-align blue-text text-darken-3">
@@ -528,7 +543,7 @@
           </select>
           <label>Materialize Select</label>
         </div>
-      
+
         <div class="input-field col s12">
           <select multiple>
             <option value="" disabled selected>Choose your option</option>
@@ -538,7 +553,7 @@
           </select>
           <label>Materialize Multiple Select</label>
         </div>
-      
+
         <div class="input-field col s12">
           <select>
             <optgroup label="team 1">
@@ -560,7 +575,7 @@
           <option value="3">Option 3</option>
         </select>
     </div>
-    
+
     <div class="col s12 m6">
       <h3>Other Form Options</h3>
       <div class="card blue-grey darken-1">

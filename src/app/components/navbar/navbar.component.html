@@ -1,10 +1,15 @@
 <div class="navbar-fixed">
-  <nav class="orange">
+  <nav class="bg-white">
     <div class="nav-wrapper container">
-      <a href="#" class="brand-logo blue-text text-darken-4">Logo</a>
+      <a [routerLink]="['./']" class="brand-logo">
+        <img src="assets/img/global/logo-small.png">
+      </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li *ngFor="let link in menu">
+          <a>{{ link.label }}</a>
+        </li>
         <li>
-          <a href="#home-section" class="waves-effect waves-orange blue-text text-darken-4">Home</a>
+          <a href="#home-section" class="waves-effect waves-orange text-primary text-darken-4">Home</a>
         </li>
         <li>
           <a href="#card-section" class="waves-effect waves-orange blue-text text-darken-4">Card</a>
