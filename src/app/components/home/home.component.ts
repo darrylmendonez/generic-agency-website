@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
         fullWidth: true,
         indicators: true
       });
+      $('select').material_select();
     });
   }
 
