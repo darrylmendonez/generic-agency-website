@@ -20,11 +20,11 @@ export class HomeComponent implements OnInit {
       $('.slider').slider();
       $('.modal').modal();
       $('.scrollspy').scrollSpy();
+      $('select').material_select();
       $('.carousel').carousel({
         fullWidth: true,
         indicators: true
       });
-      $('select').material_select();
     });
   }
 
