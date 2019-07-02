@@ -21,10 +21,7 @@ export class HomeComponent implements OnInit {
       $('.modal').modal();
       $('.scrollspy').scrollSpy();
       $('select').material_select();
-      $('.carousel').carousel({
-        fullWidth: true,
-        indicators: true
-      });
+      $('.carousel').carousel();
     });
   }
 
