@@ -11,8 +11,7 @@ export class NavbarComponent implements OnInit {
 
   appSettings: Settings;
   // navSettings: MenuLink[];
-  brandName = 'Brand Name';
-  navTitle = 'Navbar Title';
+  brandLogoPath = 'assets/img/global/logo-small.png';
   navItems = [
     {
       title: 'Home',

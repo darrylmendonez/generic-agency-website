@@ -1,8 +1,8 @@
 <div class="navbar-fixed">
-  <nav class="bg-white">
+  <nav class="white">
     <div class="nav-wrapper container">
       <a [href]="navItems[0].link" class="brand-logo">
-        <img src="assets/img/global/logo-small.png">
+        <img [src]="brandLogoPath">
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li *ngFor="let navItem of navItems">
