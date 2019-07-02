@@ -15,15 +15,15 @@ export class HomeComponent implements OnInit {
   jquery_code() {
     $(document).ready(function(){
       $('.parallax').parallax();
-      $('.carousel').carousel({
-        fullWidth: true,
-        indicators: true
-      });
       $('.collapsible').collapsible();
       $('.materialboxed').materialbox();
       $('.slider').slider();
       $('.modal').modal();
       $('.scrollspy').scrollSpy();
+      $('.carousel').carousel({
+        fullWidth: true,
+        indicators: true
+      });
     });
   }
 
