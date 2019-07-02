@@ -5,29 +5,8 @@
         <img src="assets/img/global/logo-small.png">
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li *ngFor="let link in menu">
-          <a>{{ link.label }}</a>
-        </li>
-        <li>
-          <a href="#home-section" class="waves-effect waves-orange text-primary text-darken-4">Home</a>
-        </li>
-        <li>
-          <a href="#card-section" class="waves-effect waves-orange blue-text text-darken-4">Card</a>
-        </li>
-        <li>
-          <a href="#carousel-section" class="waves-effect waves-orange blue-text text-darken-4">Carousel</a>
-        </li>
-        <li>
-          <a href="#collapsible-section" class="waves-effect waves-orange blue-text text-darken-4">Collapsible</a>
-        </li>
-        <li>
-          <a href="#media-section" class="waves-effect waves-orange blue-text text-darken-4">Media</a>
-        </li>
-        <li>
-          <a href="#modal-section" class="waves-effect waves-orange blue-text text-darken-4">Modal</a>
-        </li>
-        <li>
-          <a href="#form-section" class="waves-effect waves-orange blue-text text-darken-4">Form</a>
+        <li *ngFor="let navItem of navItems">
+          <a [href]="navItem.link" class="waves-effect waves-orange text-primary text-darken-4">{{ navItem.title }}</a>
         </li>
       </ul>
     </div>

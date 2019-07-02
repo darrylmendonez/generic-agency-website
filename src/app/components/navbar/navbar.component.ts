@@ -13,26 +13,26 @@ export class NavbarComponent implements OnInit {
   navSettings: MenuLink[];
   brandName = 'Brand Name';
   navTitle = 'Navbar Title';
-  links = [
+  navItems = [
     {
       title: 'Home',
-      link: ''
+      link: '#home-section'
     },
     {
       title: 'About Us',
-      link: 'about'
+      link: '#about-section'
     },
     {
-      title: 'How We Work',
-      link: 'work'
+      title: 'Our Mindset',
+      link: '#mindset-section'
     },
     {
-      title: 'Expertise',
-      link: 'expertise'
+      title: 'Client Testimonials',
+      link: '#testimonial-section'
     },
     {
       title: 'Contact Us',
-      link: 'contact'
+      link: '#contact-section'
     },
   ];
 
