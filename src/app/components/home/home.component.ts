@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SectionLayouts } from '../../models/sectionLayouts';
+import { HomeItems } from '../../models/homeItems';
 declare var $: any;
 
 @Component({
@@ -7,9 +9,18 @@ declare var $: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  sectionLayouts: SectionLayouts[];
 
   ngOnInit() {
     this.jquery_code();
+    this.sectionLayouts = [
+      {
+        id: 1,
+        divId: 'home-section',
+        title: 'Welcome',
+        parallaxSrc: 'assets/img/home/home-background.jpg'
+    }
+  ];
   }
 
   jquery_code() {
