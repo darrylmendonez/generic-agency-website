@@ -24,18 +24,12 @@
         </div>
       </div>
       <div class="col s12 m4">
-        <p class="white-text">
-          <br /> We are part of
-          <a href="http://www.nucleus-global.com/" target="_blank">Nucleus Global</a>,
-          <br /> a full-service medical communications group with offices around the globe.
-        </p>
+        <p class="white-text" [innerHTML]="homeData.description"></p>
       </div>
       <div class="col s12 m4">
         <br />
         <br />
-        <a href="#contact-section" fragment="contact-us" class="waves-effect waves-light btn orange darken-3">
-          Contact Us <i class="material-icons right">send</i>
-        </a>
+        <a [href]="homeData.button.href" class="waves-effect waves-light btn orange darken-3" [innerHTML]="homeData.button.label"></a>
       </div>
     </div>
   </div>
@@ -51,46 +45,28 @@
           <br />
           <br />
           <p class="green-text">
-            <strong>About ScientificPathways</strong>
+            <strong>{{ homeData.aboutList.title }}</strong>
           </p>
           <ul>
-            <li class="bullets">A medical communications agency with offices in New Jersey, USA and London, UK</li>
-            <li class="bullets">Part of an independent organization that lives by its core values of respect, integrity, partnership,
-              innovation, and fun</li>
+            <li class="bullets" *ngFor="let listItem of homeData.aboutList.listItems">{{ listItem }}</li>
           </ul>
         </div>
       </div>
       <div class="col m6">
         <div class="padded-left">
           <p class="green-text">
-            <strong>We offer the following core services to our clients:</strong>
+            <strong>{{ homeData.offerLists.title }}</strong>
           </p>
         </div>
         <div class="row">
           <div class="col m6">
             <ul>
-              <li class="bullets">Strategic planning and support</li>
-              <li class="bullets">Medical communications and marketing support</li>
-              <li class="bullets">Scientific platform and core content development</li>
-              <li class="bullets">External expert identification and engagement planning</li>
-              <li class="bullets">Internal/corporate communications and alignment</li>
-              <li class="bullets">Comprehensive sales and MSL training support</li>
-              <li class="bullets">Scientific event management, including travel services</li>
+              <li class="bullets" *ngFor="let listItem of homeData.offerLists.firstList">{{ listItem }}</li>
             </ul>
           </div>
           <div class="col m6">
             <ul>
-              <li class="bullets">Publication planning and execution</li>
-              <li class="bullets">Congress planning and exhibit booth support</li>
-              <li class="bullets">Clinical trial support and investigator communications</li>
-              <ul>
-                <li class="bullets-sub-list">Clinical trial kits</li>
-                <li class="bullets-sub-list">Investigator meetings and newsletters</li>
-                <li class="bullets-sub-list">Patient recruitment and retention initiatives</li>
-              </ul>
-              <li class="bullets">Creative concepting and design</li>
-              <li class="bullets">Video production</li>
-              <li class="bullets">Digital applications, interactive displays, learning management systems, and website development</li>
+              <li class="bullets" *ngFor="let listItem of homeData.offerLists.secondList">{{ listItem }}</li>
             </ul>
           </div>
         </div>

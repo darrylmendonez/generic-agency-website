@@ -59,8 +59,44 @@ export const SectionLayoutsData: SectionLayouts[] = [
     divId: 'contact-section',
     title: 'Contact Us'
   }
-]
+];
 
 export const GlobalData = {
   logoSrc: 'assets/img/global/logo.png',
+};
+
+export const HomeData = {
+  // tslint:disable-next-line:max-line-length
+  description: '<br /> We are part of <a href="http://www.nucleus-global.com/" target="_blank">Nucleus Global</a>,<br /> a full-service medical communications group with offices around the globe.',
+  button: {
+    href: '#contact-section',
+    label: 'Contact Us <i class="material-icons right">send</i>'
+  },
+  aboutList: {
+    title: 'About Us',
+    listItems: [
+      'A medical communications agency with offices in New Jersey, USA and London, UK',
+      'Part of an independent organization that lives by its core values of respect, integrity, partnership, innovation, and fun'
+    ]
+  },
+  offerLists: {
+    title: 'We offer the following core services to our clients:',
+    firstList: [
+      'Strategic planning and support',
+      'Medical communications and marketing support',
+      'Scientific platform and core content development',
+      'External expert identification and engagement planning',
+      'Internal/corporate communications and alignment',
+      'Comprehensive sales and MSL training support',
+      'Scientific event management, including travel services'
+    ],
+    secondList: [
+      'Publication planning and execution',
+      'Congress planning and exhibit booth support',
+      'Clinical trial support and investigator communications',
+      'Creative concepting and design',
+      'Video production',
+      'Digital applications, interactive displays, learning management systems, and website development'
+    ]
+  }
 };
