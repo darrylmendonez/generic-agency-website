@@ -1,0 +1,87 @@
+<!-- contact -->
+<div id="contact-section" class="section orange lighten-3 scrollspy">
+  <div class="row container">
+    <div class="col m12 center-align blue-text text-darken-3">
+      <h3>Contacts</h3>
+      <p>
+        Forms are the standard way to receive user inputted data. The transitions and smoothness of these elements are very important because of the inherent user interaction associated with forms.
+      </p>
+    </div>
+  </div>
+  <div class="row container">
+    <div class="col s12 m6">
+      <h3>Basic Form</h3>
+      <h4>Contact us</h4>
+      <p>Would you like to learn more about our core capabilities and/or open positions?</p>
+      <form id="contact-form" name="contactForm" ng-submit="submit()" novalidate>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="icon_email" type="tel" class="validate">
+            <label for="icon_email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">notes</i>
+            <textarea id="message-input" class="materialize-textarea validate" ng-model="contact.message"></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <button id="submit-btn" name="submit" type="submit" value="Send" class="btn waves-effect waves-yellow green">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col s12 m6">
+      <div class="center-on-small-only">
+        <img class="responsive-img" src="assets/img/global/logo.png" alt="Agency Name" />
+        <div class="row">
+          <div class="col m6 s12">
+            <p>
+              <strong>Main location:</strong>
+              <br /> 25 Independence Boulevard
+              <br /> Suite 402
+              <br /> Warren, NJ 07059
+              <br /> 908-360-4360
+              <br />
+            </p>
+          </div>
+          <div class="col m6 s12">
+            <p>
+              <strong>London location:</strong>
+              <br /> Admiral House, 76-78 Old Street, London, EC1V
+              <br /> 9AZ, United Kingdom
+              <br /> +44 207 398 0500
+              <br />
+            </p>
+          </div>
+        </div>
+        Email us:
+        <br>
+        <br>
+        <a class="btn waves-effect waves-green" href="mailto:info@agencyname.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;info@agencyname.com</a>
+        <br>
+        <br> Learn about career opportunities
+        <br> at Agency and
+        <br> across Nucleus Global:
+        <br>
+        <br>
+        <a class="btn waves-effect waves-green" href="https://chp.tbe.taleo.net/chp01/ats/careers/v2/jobSearch?act=redirectCwsV2&cws=52&org=NUCLEUSHOLDINGS"
+          target="_blank">Explore Career Opportunities</a>
+      </div>
+    </div>
+  </div>
+</div>
