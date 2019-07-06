@@ -60,8 +60,8 @@
         <a class="btn waves-effect waves-green" [href]="contactData.mailInfo.href">
           <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;{{ contactData.mailInfo.emailAddress }}</a>
         <br>
-        <br> 
-        {{ contactData.careerOpps.description }}
+        <br>
+        <span [innerHTML]="contactData.careerOpps.description"></span>
         <br>
         <br>
         <a class="btn waves-effect waves-green" [href]="contactData.careerOpps.href"
