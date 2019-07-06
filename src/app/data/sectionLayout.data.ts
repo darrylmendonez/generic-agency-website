@@ -1,4 +1,33 @@
+import { NavItems } from '../models/navItems';
 import { SectionLayouts } from '../models/sectionLayouts';
+
+export const NavItemsData: NavItems[] = [
+  {
+    id: 1,
+    title: 'Home',
+    link: '#home-section'
+  },
+  {
+    id: 2,
+    title: 'About Us',
+    link: '#about-section'
+  },
+  {
+    id: 3,
+    title: 'Our Mindset',
+    link: '#mindset-section'
+  },
+  {
+    id: 4,
+    title: 'Client Testimonials',
+    link: '#testimonial-section'
+  },
+  {
+    id: 5,
+    title: 'Contact Us',
+    link: '#contact-section'
+  },
+];
 
 export const SectionLayoutsData: SectionLayouts[] = [
   {
