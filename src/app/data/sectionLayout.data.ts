@@ -124,10 +124,12 @@ export const AboutData = {
     subTitle: 'Our team of experienced professionals:',
     clientServices: {
       title: 'Client Services',
+      // tslint:disable-next-line:max-line-length
       subList: 'Specializing in business planning and strategic consultation, client communications, general account management, and overall program&nbsp;oversight'
     },
     scientificServices: {
       title: 'Scientific Services',
+      // tslint:disable-next-line:max-line-length
       subList: 'Individuals with expertise in scientific research,   strategic communication planning (landscape assessments, gap analyses), scientific direction, and content development'
     }
   }
@@ -177,7 +179,7 @@ export const TestimonialData = [
 ];
 
 export const DataData = {
-
+  details: 'Hover over any data graph to see more details'
 };
 
 export const ContactData = {
