@@ -113,9 +113,25 @@ export const HomeData = {
   }
 };
 
-// export const AboutData = {
-  
-// };
+export const AboutData = {
+  columnOne: {
+    title: 'Our Leadership',
+    profileImgSrc: 'assets/img/about/profiles/profile1.png',
+    agencyName: 'Agency Name US'
+  },
+  columnTwo: {
+    title: 'Our Team',
+    subTitle: 'Our team of experienced professionals:',
+    clientServices: {
+      title: 'Client Services',
+      subList: 'Specializing in business planning and strategic consultation, client communications, general account management, and overall program&nbsp;oversight'
+    },
+    scientificServices: {
+      title: 'Scientific Services',
+      subList: 'Individuals with expertise in scientific research,   strategic communication planning (landscape assessments, gap analyses), scientific direction, and content development'
+    }
+  }
+};
 
 export const MindsetData = {
   columnOne: {

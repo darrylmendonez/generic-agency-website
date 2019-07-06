@@ -26,11 +26,11 @@
     <div class="row">
       <div class="col m6">
         <div class="center-align">
-          <h5>Our Leadership</h5>
+          <h5>{{ aboutData.columnOne.title }}</h5>
         </div>
         <div class="row" *ngFor="let userProfile of userProfiles">
           <div class="col m4">
-            <img class="responsive-img img-circle" src="assets/img/about/profiles/profile1.png" [alt]="userProfile.name">
+            <img class="responsive-img img-circle" [src]="aboutData.columnOne.profileImgSrc" [alt]="userProfile.name">
           </div>
           <div class="col m8">
             <div class="padded-right">
@@ -40,13 +40,13 @@
                     <span class="green-text">
                       <strong>{{ userProfile.name }}</strong><br />
                       {{ userProfile.company.catchPhrase }}<br />
-                      Agency Name US<br />
+                      {{ aboutData.columnOne.agencyName }}<br />
                       <a [href]="'mailto:'+userProfile.email">{{ userProfile.email }}</a>
                     </span>
                   </p>
-                  <ul>
-                    <li class="bullets">{{ userProfile.company.bs }}</li>
-                  </ul>
+                  <p>
+                    {{ userProfile.company.bs }}
+                  </p>
                 </div>
               </div>
             </div>
@@ -54,24 +54,22 @@
         </div>
       </div>
       <div class="col m6">
-        <h5 class="center-align">Our Team</h5>
+        <h5 class="center-align">{{ aboutData.columnTwo.title }}</h5>
         <div class="padded-left">
           <br />
           <br />
           <p class="green-text">
-            <strong>Our team of experienced professionals:</strong>
+            <strong>{{ aboutData.columnTwo.subTitle }}</strong>
           </p>
           <ul>
-            <li class="bullets">Client Services
+            <li class="bullets">{{ aboutData.columnTwo.clientServices.title }}
               <ul>
-                <li class="sub-list">Specializing in business planning and strategic consultation, client communications, general account
-                management, and overall program&nbsp;oversight</li>
+                <li class="sub-list">{{ aboutData.columnTwo.clientServices.subList }}</li>
               </ul>
             </li>
-            <li class="bullets">Scientific Services
+            <li class="bullets">{{ aboutData.columnTwo.scientificServices.title }}
               <ul>
-                <li class="sub-list">Individuals with expertise in scientific research,   strategic communication planning (landscape assessments,
-                gap analyses), scientific direction, and content development</li>
+                <li class="sub-list">{{ aboutData.columnTwo.scientificServices.subList }}</li>
               </ul>
             </li>
           </ul>

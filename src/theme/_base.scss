@@ -9,3 +9,39 @@
 .primary {
   background-color: $primary !important;
 }
+
+.sub-list {
+  margin-left: 10px;
+}
+
+ul:not(.browser-default) .bullets {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul:not(.browser-default) .bullets-sub-list {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+.padded-right {
+  padding-right: 15px;
+}
+
+.padded-left {
+  padding-left: 15px;
+}
