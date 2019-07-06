@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
+import { SectionLayoutsData, GlobalData, MindsetData } from '../../data/sectionLayout.data';
 
 @Component({
   selector: 'app-mindset',
@@ -9,6 +9,7 @@ import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
 export class MindsetComponent implements OnInit {
   mindsetLayout = SectionLayoutsData[2];
   globalData = GlobalData;
+  mindsetData = MindsetData;
 
   constructor() { }
 

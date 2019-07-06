@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col s8 offset-s2 m5 offset-m3 l3 offset-l9 xl3 offset-xl9">
         <div class="right">
-          <img class="responsive-img" [src]="globalData.logoSrc" alt="Scientific Pathways" />
+          <img class="responsive-img" [src]="globalData.logoSrc" [alt]="globalData.alt" />
           <h3 class="orange-text text-darken-3"><em>{{ mindsetLayout.title }}</em></h3>
         </div>
       </div>
@@ -21,43 +21,28 @@
     </div>
   </div>
   <div class="container">
-      <div class="row">
-        <div class="col m6">
-          <div class="padded-right">
-            <p class="center-align green-text">
-              <strong>Our Name</strong>
-            </p>
-            <p class="green-text">
-              <strong>What are we?</strong>
-            </p>
-            <img class="img-responsive" [src]="globalData.logoSrc" alt="Agency Name">
-            <p>
-              <strong>At the cellular level, scientific or signaling transduction</strong> pathways start with <br> 
-              <strong>ACTIVATION</strong>: A signal sets off a cascade of events that<br>
-              <strong>PROCESS</strong> critical information, culminating in a desired<br>
-              <strong>RESPONSE</strong>.
-            </p>
-          </div>
+    <div class="row">
+      <div class="col m6">
+        <div class="padded-right">
+          <p class="center-align green-text">
+            <strong>{{ mindsetData.columnOne.title }}</strong>
+          </p>
+          <img class="img-responsive" [src]="globalData.logoSrc" [alt]="globalData.alt">
+          <p *ngFor="let step of mindsetData.columnOne.process" [innerHTML]="step">
         </div>
-        <div class="col m6">
-          <div class="padded-left">
-            <p class="center-align green-text">
-              <strong>Our Approach</strong>
-            </p>
-            <p class="green-text">
-              <strong>We apply this response-driven, scientific pathways mindset to how we approach medical communications:</strong>
-            </p>
-            <ul>
-              <li class="bullets">We deliver relevant, credible, and engaging medical communications that
-                <strong>ACTIVATE</strong> target audiences</li>
-              <li class="bullets">We build compelling strategies and
-                <strong>PROCESS</strong> these into impactful multichannel communication plans that focus on desired outcomes</li>
-              <li class="bullets">And because we are independently owned, we're able to
-                <strong>RESPOND</strong> quickly to our clients' evolving needs to grow their businesses</li>
-            </ul>
-            <p>Now that's signaling change in healthcare communications.</p>
-          </div>
+      </div>
+      <div class="col m6">
+        <div class="padded-left">
+          <p class="center-align green-text">
+            <strong>{{ mindsetData.columnTwo.title }}</strong>
+          </p>
+          <p class="green-text" [innerHTML]="mindsetData.columnTwo.description"></p>
+          <ul>
+            <li class="bullets" *ngFor="let listItem of mindsetData.columnTwo.list" [innerHTML]="listItem"></li>
+          </ul>
+          <p>{{ mindsetData.columnTwo.clincher }}</p>
         </div>
       </div>
     </div>
+  </div>
 </div>

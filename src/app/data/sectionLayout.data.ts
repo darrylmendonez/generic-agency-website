@@ -63,6 +63,7 @@ export const SectionLayoutsData: SectionLayouts[] = [
 
 export const GlobalData = {
   logoSrc: 'assets/img/global/logo.png',
+  alt: 'Agency Name'
 };
 
 export const HomeData = {
@@ -98,5 +99,33 @@ export const HomeData = {
       'Video production',
       'Digital applications, interactive displays, learning management systems, and website development'
     ]
+  }
+};
+
+// export const AboutData = {
+  
+// };
+
+export const MindsetData = {
+  columnOne: {
+    title: 'Our Name',
+    process: [
+      '<strong>At the cellular level, scientific or signaling transduction</strong> pathways start with ',
+      '<strong>ACTIVATION</strong>: A signal sets off a cascade of events that',
+      '<strong>PROCESS</strong> critical information, culminating in a desired',
+      '<strong>RESPONSE</strong>.'
+    ]
+  },
+  columnTwo: {
+    title: 'Our Approach',
+    description: '<strong>We apply this response-driven, scientific pathways mindset to how we approach medical communications:</strong>',
+    list: [
+      'We deliver relevant, credible, and engaging medical communications that <strong>ACTIVATE</strong> target audiences',
+      // tslint:disable-next-line:max-line-length
+      'We build compelling strategies and <strong>PROCESS</strong> these into impactful multichannel communication plans that focus on desired outcomes',
+      // tslint:disable-next-line:max-line-length
+      'And because we are independently owned, we\'re able to <strong>RESPOND</strong> quickly to our clients\' evolving needs to grow their businesses',
+    ],
+    clincher: 'Now that\'s signaling change in healthcare communications.'
   }
 };
