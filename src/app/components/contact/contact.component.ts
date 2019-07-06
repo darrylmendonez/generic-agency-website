@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionLayouts } from '../../models/sectionLayouts';
+import { SectionLayoutsData } from '../../data/sectionLayout.data';
 
 @Component({
   selector: 'app-contact',
@@ -7,18 +7,11 @@ import { SectionLayouts } from '../../models/sectionLayouts';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  sectionLayouts: SectionLayouts[];
+  contactSectionLayout = SectionLayoutsData[4];
 
   constructor() { }
 
   ngOnInit() {
-    this.sectionLayouts = [
-      {
-        id: 5,
-        divId: 'contact-section',
-        title: 'Contact Us'
-      }
-    ];
   }
 
 }

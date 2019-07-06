@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionLayouts } from '../../models/sectionLayouts';
+import { SectionLayoutsData } from '../../data/sectionLayout.data';
 
 @Component({
   selector: 'app-mindset',
@@ -7,19 +7,11 @@ import { SectionLayouts } from '../../models/sectionLayouts';
   styleUrls: ['./mindset.component.scss']
 })
 export class MindsetComponent implements OnInit {
-  sectionLayouts: SectionLayouts[];
+  mindsetLayout = SectionLayoutsData[2];
 
   constructor() { }
 
   ngOnInit() {
-    this.sectionLayouts = [
-      {
-        id: 3,
-        divId: 'mindset-section',
-        title: 'Our Mindset',
-        parallaxSrc: 'assets/img/mindset/mindset-background.jpg'
-      }
-    ];
   }
 
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionLayouts } from '../../models/sectionLayouts';
 
 @Component({
   selector: 'app-testimonial',
@@ -7,19 +6,10 @@ import { SectionLayouts } from '../../models/sectionLayouts';
   styleUrls: ['./testimonial.component.scss']
 })
 export class TestimonialComponent implements OnInit {
-  sectionLayouts: SectionLayouts[];
 
   constructor() { }
 
   ngOnInit() {
-    this.sectionLayouts = [
-      {
-        id: 4,
-        divId: 'testimonial-section',
-        title: 'Client Testimonials',
-        parallaxSrc: 'assets/img/testimonial/testimonial-background.jpg'
-      }
-    ];
   }
 
 }
