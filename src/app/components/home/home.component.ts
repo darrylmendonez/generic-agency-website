@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { PlaceholdersService } from '../../services/placeholders.service';
-import { PlaceholderItems } from '../../models/PlaceholderItems';
+import { PlaceholderItems } from '../../models/placeholderItems';
 import { SectionLayoutsData, GlobalData, HomeData } from '../../data/sectionLayout.data';
 declare var $: any;
 
