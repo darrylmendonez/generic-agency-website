@@ -20,7 +20,7 @@ export class AboutComponent implements OnInit {
     this.placeholdersService.getUsers().subscribe(users => {
       this.userProfiles = users;
       console.log('userProfiles = ', this.userProfiles);
-    })
+    });
   }
 
 }

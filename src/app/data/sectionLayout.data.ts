@@ -24,6 +24,11 @@ export const NavItemsData: NavItems[] = [
   },
   {
     id: 5,
+    title: 'Data',
+    link: '#data-section'
+  },
+  {
+    id: 6,
     title: 'Contact Us',
     link: '#contact-section'
   },
@@ -56,6 +61,12 @@ export const SectionLayoutsData: SectionLayouts[] = [
   },
   {
     id: 5,
+    divId: 'data-section',
+    title: 'Data',
+    parallaxSrc: 'assets/img/data/data-background.jpg'
+  },
+  {
+    id: 6,
     divId: 'contact-section',
     title: 'Contact Us'
   }
@@ -148,6 +159,10 @@ export const TestimonialData = [
     author: 'Senior Medical Director, advisory board series'
   }
 ];
+
+export const DataData = {
+
+};
 
 export const ContactData = {
   description: 'Would you like to learn more about our core capabilities and/or open positions?',

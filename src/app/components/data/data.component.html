@@ -1,0 +1,86 @@
+<div [id]="dataSectionLayout.divId" class="parallax-container section scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s8 offset-s2 m5 offset-m3 l3 offset-l9 xl3 offset-xl9">
+          <div class="right">
+            <img class="responsive-img" [src]="globalData.logoSrc" [alt]="globalData.alt" />
+            <h3 class="text-primary"><em>{{ dataSectionLayout.title }}</em></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+      <img [src]="dataSectionLayout.parallaxSrc">
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col m12 center-align">
+          <h4>
+            {{ dataSectionLayout.title }}
+          </h4>
+          <p>
+            Hover over any data graph to see more details
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m6">
+          <div class="card yellow lighten-5">
+            <div class="card-content">
+              <span class="card-title">Line Chart</span>
+              <canvas id="line-chart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col m6">
+          <div class="card yellow lighten-5">
+            <div class="card-content">
+              <span class="card-title">Bar Graph</span>
+              <canvas id="bar-graph"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m6">
+          <div class="card yellow lighten-5">
+            <div class="card-content">
+              <span class="card-title">Pie Chart</span>
+              <canvas id="pie-chart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col m6">
+          <div class="card yellow lighten-5">
+            <div class="card-content">
+              <span class="card-title">Radar Chart</span>
+              <canvas id="radar-chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m6">
+          <div class="card yellow lighten-5">
+            <div class="card-content">
+              <span class="card-title">Polar Area Chart</span>
+              <canvas id="polar-area-chart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col m6">
+          <div class="card yellow lighten-5">
+            <div class="card-content">
+              <span class="card-title">Logarithmic Line Graph</span>
+              <canvas id="logarithmic-line-graph"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

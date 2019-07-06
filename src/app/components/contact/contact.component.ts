@@ -7,7 +7,7 @@ import { SectionLayoutsData, GlobalData, ContactData } from '../../data/sectionL
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  contactSectionLayout = SectionLayoutsData[4];
+  contactSectionLayout = SectionLayoutsData[5];
   globalData = GlobalData;
   contactData = ContactData;
 
