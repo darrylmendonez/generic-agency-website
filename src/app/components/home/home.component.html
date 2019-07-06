@@ -48,7 +48,9 @@
             <strong>{{ homeData.aboutList.title }}</strong>
           </p>
           <ul>
-            <li class="bullets" *ngFor="let listItem of homeData.aboutList.listItems">{{ listItem }}</li>
+            <ng-container *ngFor="let listItem of homeListItems; index as i">
+              <li class="bullets" *ngIf="i < 10">{{ listItem.title }}</li>
+            </ng-container>
           </ul>
         </div>
       </div>
@@ -61,12 +63,16 @@
         <div class="row">
           <div class="col m6">
             <ul>
-              <li class="bullets" *ngFor="let listItem of homeData.offerLists.firstList">{{ listItem }}</li>
+              <ng-container *ngFor="let listItem of homeListItems; index as i">
+                <li class="bullets" *ngIf="(i >= 10) && (i < 20)">{{ listItem.title }}</li>
+              </ng-container>
             </ul>
           </div>
           <div class="col m6">
             <ul>
-              <li class="bullets" *ngFor="let listItem of homeData.offerLists.secondList">{{ listItem }}</li>
+              <ng-container *ngFor="let listItem of homeListItems; index as i">
+                <li class="bullets" *ngIf="(i >= 20) && (i < 30)">{{ listItem.title }}</li>
+              </ng-container>
             </ul>
           </div>
         </div>
