@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col s8 offset-s2 m5 offset-m3 l3 offset-l9 xl3 offset-xl9">
         <div class="right">
-          <img class="responsive-img" src="assets/img/global/logo.png" alt="Scientific Pathways" />
+          <img class="responsive-img" [src]="globalData.logoSrc" alt="Scientific Pathways" />
           <h3 class="orange-text text-darken-3"><em>{{ mindsetLayout.title }}</em></h3>
         </div>
       </div>
@@ -17,7 +17,7 @@
 <div class="section orange lighten-3">
   <div class="row container">
     <div class="col m12 center-align blue-text text-darken-3">
-      <h3>Our Mindset</h3>
+      <h3>{{ mindsetLayout.title }}</h3>
     </div>
   </div>
   <div class="container">
@@ -30,7 +30,7 @@
             <p class="green-text">
               <strong>What are we?</strong>
             </p>
-            <img class="img-responsive" src="assets/img/global/logo.png" alt="Agency Name">
+            <img class="img-responsive" [src]="globalData.logoSrc" alt="Agency Name">
             <p>
               <strong>At the cellular level, scientific or signaling transduction</strong> pathways start with <br> 
               <strong>ACTIVATION</strong>: A signal sets off a cascade of events that<br>

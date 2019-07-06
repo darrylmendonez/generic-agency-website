@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
 
 @Component({
   selector: 'app-testimonial',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonial.component.scss']
 })
 export class TestimonialComponent implements OnInit {
+  testimonialLayout = SectionLayoutsData[3];
+  globalData = GlobalData;
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SectionLayoutsData } from '../../data/sectionLayout.data';
+import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
 declare var $: any;
 
 @Component({
@@ -9,6 +9,7 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
   homeSectionLayout = SectionLayoutsData[0];
+  globalData = GlobalData;
 
   ngOnInit() {
     this.jquery_code();

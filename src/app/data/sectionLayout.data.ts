@@ -60,3 +60,7 @@ export const SectionLayoutsData: SectionLayouts[] = [
     title: 'Contact Us'
   }
 ]
+
+export const GlobalData = {
+  logoSrc: 'assets/img/global/logo.png',
+};

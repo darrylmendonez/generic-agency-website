@@ -1,11 +1,10 @@
-<!-- testimonial -->
-<div id="testimonial-section" class="parallax-container section scrollspy">
+<div [id]="testimonialLayout.divId" class="parallax-container section scrollspy">
   <div class="container">
       <div class="row">
           <div class="col l12">
             <div class="center-align">
               <h5 class="white-text">
-                <br /> Client Testimonials
+                <br /> {{ testimonialLayout.title }}
               </h5>
             </div>
           </div>
@@ -53,6 +52,6 @@
     </div>
   </div>
   <div class="parallax">
-    <img src="assets/img/testimonial/testimonial-background.jpg">
+    <img [src]="testimonialLayout.parallaxSrc">
   </div>
 </div>
