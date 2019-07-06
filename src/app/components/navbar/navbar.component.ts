@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AppSettings} from '../../settings/settings';
 import {Settings, MenuLink} from '../../settings/setting.model';
+import { NavItems } from '../../models/navItems';
 
 @Component({
   selector: 'app-navbar',
@@ -9,37 +10,43 @@ import {Settings, MenuLink} from '../../settings/setting.model';
 })
 export class NavbarComponent implements OnInit {
 
+  navItems: NavItems[];
+
   appSettings: Settings;
-  // navSettings: MenuLink[];
   brandLogoPath = 'assets/img/global/logo-small.png';
-  navItems = [
-    {
-      title: 'Home',
-      link: '#home-section'
-    },
-    {
-      title: 'About Us',
-      link: '#about-section'
-    },
-    {
-      title: 'Our Mindset',
-      link: '#mindset-section'
-    },
-    {
-      title: 'Client Testimonials',
-      link: '#testimonial-section'
-    },
-    {
-      title: 'Contact Us',
-      link: '#contact-section'
-    },
-  ];
 
   constructor() {
     // this.navSettings = AppSettings.menu;
   }
 
   ngOnInit() {
+    this.navItems = [
+      {
+        id: 1,
+        title: 'Home',
+        link: '#home-section'
+      },
+      {
+        id: 2,
+        title: 'About Us',
+        link: '#about-section'
+      },
+      {
+        id: 3,
+        title: 'Our Mindset',
+        link: '#mindset-section'
+      },
+      {
+        id: 4,
+        title: 'Client Testimonials',
+        link: '#testimonial-section'
+      },
+      {
+        id: 5,
+        title: 'Contact Us',
+        link: '#contact-section'
+      },
+    ];
   }
 
 }
