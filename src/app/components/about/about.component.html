@@ -28,35 +28,31 @@
         <div class="center-align">
           <h5>Our Leadership</h5>
         </div>
-        <div class="row">
+        <div class="row" *ngFor="let userProfile of userProfiles">
           <div class="col m4">
-            <img class="responsive-img img-circle" src="assets/img/about/profiles/profile1.jpg" alt="Tara Ruest, PhD">
+            <img class="responsive-img img-circle" src="assets/img/about/profiles/profile1.png" [alt]="userProfile.name">
           </div>
           <div class="col m8">
             <div class="padded-right">
               <div class="row">
                 <div class="col-md-12">
-                  <!-- Tara Ruest's profile -->
                   <p>
                     <span class="green-text">
-                      <strong>Tara Ruest, PhD</strong><br />
-                      Vice President, Scientific Services<br />
-                      Scientific Pathways US<br />
-                      <a href="mailto:tara.ruest@scientificpathways.com">tara.ruest@scientificpathways.com</a>
+                      <strong>{{ userProfile.name }}</strong><br />
+                      {{ userProfile.company.catchPhrase }}<br />
+                      Agency Name US<br />
+                      <a [href]="'mailto:'+userProfile.email">{{ userProfile.email }}</a>
                     </span>
                   </p>
                   <ul>
-                    <li class="bullets">Tara has 16 years of experience in medical&nbsp;communications</li>
-                    <li class="bullets">She enjoys diving into the science in collaboration with clients, working closely with clinical and
-                    commercial teams as well as external experts, to develop credible and compelling medical education&nbsp;initiatives
-                    </li>
+                    <li class="bullets">{{ userProfile.company.bs }}</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col m4">
             <img class="responsive-img img-circle" src="assets/img/about/profiles/profile2.jpg" alt="Crysta Bilow">
           </div>
@@ -64,7 +60,6 @@
             <div class="padded-right">
               <div class="row">
                 <div class="col-md-12">
-                  <!-- brendan's profile -->
                   <p>
                     <span class="green-text">
                       <strong>Crysta Bilow</strong><br />Vice President, Client Services<br />Scientific Pathways US<br />
@@ -89,7 +84,6 @@
             <div class="padded-right">
               <div class="row">
                 <div class="col-md-12">
-                  <!-- brendan's profile -->
                   <p>
                     <span class="green-text">
                       <strong>Brendan Murphy, PhD</strong><br />
@@ -106,7 +100,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="col m6">
         <h5 class="center-align">Our Team</h5>
