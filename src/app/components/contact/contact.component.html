@@ -1,18 +1,13 @@
-<!-- contact -->
 <div [id]="contactSectionLayout.divId" class="section orange lighten-3 scrollspy">
   <div class="row container">
     <div class="col m12 center-align blue-text text-darken-3">
       <h3>{{ contactSectionLayout.title }}</h3>
-      <p>
-        Forms are the standard way to receive user inputted data. The transitions and smoothness of these elements are very important because of the inherent user interaction associated with forms.
-      </p>
     </div>
   </div>
   <div class="row container">
     <div class="col s12 m6">
-      <h3>Basic Form</h3>
-      <h4>Contact us</h4>
-      <p>Would you like to learn more about our core capabilities and/or open positions?</p>
+      <h4>{{ contactSectionLayout.title }}</h4>
+      <p>{{ contactData.description }}</p>
       <form id="contact-form" name="contactForm" ng-submit="submit()" novalidate>
         <div class="row">
           <div class="input-field col s12">
@@ -48,22 +43,13 @@
       <div class="center-on-small-only">
         <img class="responsive-img" [src]="globalData.logoSrc" [alt]="globalData.alt" />
         <div class="row">
-          <div class="col m6 s12">
+          <div class="col m6 s12" *ngFor="let location of contactData.locations">
             <p>
-              <strong>Main location:</strong>
-              <br /> 25 Independence Boulevard
-              <br /> Suite 402
-              <br /> Warren, NJ 07059
-              <br /> 908-360-4360
-              <br />
-            </p>
-          </div>
-          <div class="col m6 s12">
-            <p>
-              <strong>London location:</strong>
-              <br /> Admiral House, 76-78 Old Street, London, EC1V
-              <br /> 9AZ, United Kingdom
-              <br /> +44 207 398 0500
+              <strong>{{ location.title }}</strong>
+              <br /> {{ location.address }}
+              <br /> {{ location.address2 }}
+              <br /> {{ location.address3 }}
+              <br /> {{ location.phone }}
               <br />
             </p>
           </div>
@@ -71,16 +57,15 @@
         Email us:
         <br>
         <br>
-        <a class="btn waves-effect waves-green" href="mailto:info@agencyname.com">
-          <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;info@agencyname.com</a>
+        <a class="btn waves-effect waves-green" [href]="contactData.mailInfo.href">
+          <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;{{ contactData.mailInfo.emailAddress }}</a>
         <br>
-        <br> Learn about career opportunities
-        <br> at Agency and
-        <br> across Nucleus Global:
+        <br> 
+        {{ contactData.careerOpps.description }}
         <br>
         <br>
-        <a class="btn waves-effect waves-green" href="https://chp.tbe.taleo.net/chp01/ats/careers/v2/jobSearch?act=redirectCwsV2&cws=52&org=NUCLEUSHOLDINGS"
-          target="_blank">Explore Career Opportunities</a>
+        <a class="btn waves-effect waves-green" [href]="contactData.careerOpps.href"
+          target="_blank">{{ contactData.careerOpps.buttonLabel }}</a>
       </div>
     </div>
   </div>

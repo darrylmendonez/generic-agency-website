@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
+import { SectionLayoutsData, GlobalData, TestimonialData } from '../../data/sectionLayout.data';
 
 @Component({
   selector: 'app-testimonial',
@@ -9,6 +9,7 @@ import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
 export class TestimonialComponent implements OnInit {
   testimonialLayout = SectionLayoutsData[3];
   globalData = GlobalData;
+  testimonialData = TestimonialData;
 
   constructor() { }
 

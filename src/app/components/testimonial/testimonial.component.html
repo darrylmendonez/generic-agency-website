@@ -3,19 +3,19 @@
       <div class="row">
           <div class="col l12">
             <div class="center-align">
-              <h5 class="white-text">
+              <h4 class="">
                 <br /> {{ testimonialLayout.title }}
-              </h5>
+              </h4>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col l2 offset-l2">
             <div class="first-client-test">
-              <p class="white-text">
-                "You guys are absolutely the very best! Thank you!"
-                <br /> - Global Indication Lead, speaker training event
-              </p>
+              <strong class="">
+                "{{ testimonialData[0].quote }}"
+                <br /> - {{ testimonialData[0].author }}
+              </strong>
             </div>
           </div>
           <div class="col l2">
@@ -24,16 +24,16 @@
             <br />
             <br />
             <br />
-            <p class="white-text">
-              "Might be one of the first times for me that I have no comments and changes. Great work."
-              <br /> - Brand Training Manager, sales training materials
-            </p>
+            <strong class="">
+                "{{ testimonialData[1].quote }}"
+                <br /> - {{ testimonialData[1].author }}
+            </strong>
           </div>
           <div class="col l3">
-            <p class="white-text">
-              "We were all so impressed by how these look! Please let your team know we appreciate their work on this."
-              <br /> - Senior Medical Communications Specialist, congress booth asset support
-            </p>
+            <strong class="">
+                "{{ testimonialData[2].quote }}"
+                <br /> - {{ testimonialData[2].author }}
+            </strong>
           </div>
           <div class="col l3">
             <br />
@@ -42,12 +42,10 @@
             <br />
             <br />
             <br />
-            <p class="white-text">
-              "Everything was very well planned and
-              <br /> executed really well with very good attention to detail....
-              <br /> Kudos to your team."
-              <br /> - Senior Medical Director, advisory board series
-            </p>
+            <strong class="">
+                "{{ testimonialData[3].quote }}"
+                <br /> - {{ testimonialData[3].author }}
+            </strong>
           </div>
     </div>
   </div>

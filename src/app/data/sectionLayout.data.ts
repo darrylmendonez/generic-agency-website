@@ -129,3 +129,51 @@ export const MindsetData = {
     clincher: 'Now that\'s signaling change in healthcare communications.'
   }
 };
+
+export const TestimonialData = [
+  {
+    quote: 'You guys are absolutely the very best! Thank you!',
+    author: 'Global Indication Lead, speaker training event'
+  },
+  {
+    quote: 'Might be one of the first times for me that I have no comments and changes. Great work.',
+    author: 'Brand Training Manager, sales training materials'
+  },
+  {
+    quote: 'We were all so impressed by how these look! Please let your team know we appreciate their work on this.',
+    author: 'Senior Medical Communications Specialist, congress booth asset support'
+  },
+  {
+    quote: 'Everything was very well planned and executed really well with very good attention to detail.... Kudos to your team.',
+    author: 'Senior Medical Director, advisory board series'
+  }
+];
+
+export const ContactData = {
+  description: 'Would you like to learn more about our core capabilities and/or open positions?',
+  locations: [
+    {
+      title: 'Main Location',
+      address: '25 Independence Boulevard ',
+      address2: 'Suite 402',
+      address3: 'Warren, NJ 07059',
+      phone: '908-360-4360 '
+    },
+    {
+      title: 'London location:',
+      address: 'Admiral House, 76-78 Old Street, London,',
+      address2: 'EC1V ',
+      address3: '9AZ, United Kingdom',
+      phone: '+44 207 398 0500'
+    }
+  ],
+  mailInfo: {
+    href: 'mailto:info@agencyname.com',
+    emailAddress: 'info@agencyname.com'
+  },
+  careerOpps: {
+    description: 'Learn about career opportunities<br> at Agency and<br> across Nucleus Global:',
+    href: 'https://chp.tbe.taleo.net/chp01/ats/careers/v2/jobSearch?act=redirectCwsV2&cws=52&org=NUCLEUSHOLDINGS',
+    buttonLabel: 'Explore Career Opportunities'
+  }
+}

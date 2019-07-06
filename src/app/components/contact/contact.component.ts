@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
+import { SectionLayoutsData, GlobalData, ContactData } from '../../data/sectionLayout.data';
 
 @Component({
   selector: 'app-contact',
@@ -9,6 +9,7 @@ import { SectionLayoutsData, GlobalData } from '../../data/sectionLayout.data';
 export class ContactComponent implements OnInit {
   contactSectionLayout = SectionLayoutsData[4];
   globalData = GlobalData;
+  contactData = ContactData;
 
   constructor() { }
 
