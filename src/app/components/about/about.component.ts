@@ -20,7 +20,6 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.placeholdersService.getUsers().subscribe(users => {
       this.userProfiles = users;
-      console.log('userProfiles = ', this.userProfiles);
     });
   }
 
