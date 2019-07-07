@@ -1,6 +1,14 @@
-# GenericAgencyWebsite
+# Generic Agency Website
+
+This project is used to create uniformed websites across the company for each agency. A defined structure has been formed that allows for content and images to be swapped in for easy customization.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+
+## Launch app
+
+Clone repo
+Run `npm install`
+Run `ng serve`
 
 ## Development server
 
