@@ -6,8 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Launch app
 
-Clone repo
-Run `npm install`
+Clone repo<br />
+Run `npm install`<br />
 Run `ng serve`
 
 ## Development server
